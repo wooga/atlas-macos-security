@@ -49,7 +49,7 @@ cveHandler {
 }
 
 dependencies {
-    implementation 'com.wooga.security:macos-security:[1,2['
+    api 'com.wooga.security:macos-security:[1,2['
     integrationTestImplementation 'com.wooga.spock.extensions:spock-macos-keychain-extension:[1,2['
     implementation 'com.wooga.gradle:gradle-commons:[1,2['
     testImplementation 'com.wooga.gradle:gradle-commons-test:[1,2['
