@@ -1,12 +1,11 @@
 package wooga.gradle.macOS.security.tasks
 
-import jdk.nashorn.internal.ir.annotations.Ignore
 import spock.lang.Requires
 
 @Requires({ os.macOs && env['ATLAS_BUILD_UNITY_IOS_EXECUTE_KEYCHAIN_SPEC'] == 'YES' })
 class SecurityResetKeychainSearchListIntegrationSpec extends KeychainSearchListSpec<SecurityResetKeychainSearchList> {
 
-    @Ignore
+//    @Ignore
     def "can reset keychain lookup list"() {
         given: "a default keychain"
         def defaultLookupList = keychainSearchList.collect()

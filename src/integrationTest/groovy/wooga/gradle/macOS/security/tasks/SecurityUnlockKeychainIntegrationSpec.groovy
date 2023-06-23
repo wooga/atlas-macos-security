@@ -46,7 +46,7 @@ class SecurityUnlockKeychainIntegrationSpec extends InteractiveSecurityTaskInteg
         runTasksSuccessfully(subjectUnderTestName)
     }
 
-    @Unroll("can set property #property with #method and type #type")
+    @Unroll("can set property #property with #invocation and type #type")
     def "can set property"() {
         expect:
         runPropertyQuery(get, set).matches(rawValue)
